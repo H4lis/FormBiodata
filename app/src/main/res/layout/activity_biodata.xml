@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".BiodataActivity">
+
+    <ImageView
+        android:id="@+id/imageview"
+        android:layout_width="wrap_content"
+        android:layout_height="170dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:scaleType="fitXY"
+        app:srcCompat="@drawable/bag" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="130dp"
+        android:layout_height="130dp"
+        android:src="@drawable/user"
+        android:layout_marginTop="90dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imageview" />
+
+    <TextView
+        android:id="@+id/tv_hasil"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="user"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="@+id/imageView"
+        app:layout_constraintStart_toStartOf="@+id/imageView"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/nim"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="30dp"
+        app:cardCornerRadius="30dp"
+        app:cardElevation="1dp"
+        app:layout_constraintEnd_toEndOf="@+id/tv_hasil"
+        app:layout_constraintStart_toStartOf="@+id/tv_hasil"
+        app:layout_constraintTop_toBottomOf="@+id/tv_hasil">
+        <TextView
+            android:id="@+id/tv_nimm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="NIm  : 60900121060"
+            android:textSize="20sp"
+            android:layout_margin="20dp"/>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/jurusan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="30dp"
+        app:cardCornerRadius="30dp"
+        app:cardElevation="1dp"
+        app:layout_constraintEnd_toEndOf="@+id/tv_hasil"
+        app:layout_constraintHorizontal_bias="0.544"
+        app:layout_constraintStart_toStartOf="@+id/tv_hasil"
+        app:layout_constraintTop_toBottomOf="@+id/nim">
+
+        <TextView
+            android:id="@+id/tv_jurusan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:text="Jurusan : Sistem Informasi"
+            android:textSize="20sp" />
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/asal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="30dp"
+        app:cardCornerRadius="30dp"
+        app:cardElevation="1dp"
+        app:layout_constraintEnd_toEndOf="@+id/tv_hasil"
+        app:layout_constraintHorizontal_bias="0.544"
+        app:layout_constraintStart_toStartOf="@+id/tv_hasil"
+        app:layout_constraintTop_toBottomOf="@+id/jurusan">
+
+        <TextView
+            android:id="@+id/tv_asal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:text="Asal : Bantaeng"
+            android:textSize="20sp" />
+
+    </androidx.cardview.widget.CardView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
